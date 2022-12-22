@@ -1,0 +1,22 @@
+.main-container {
+  width: 95%;
+  margin: auto;
+  background-color: rgb(111, 153, 207);
+}
+.main-container h3 {
+  color: #f1f1f1;
+  text-align: center;
+  padding-top: 20px;
+}
+.project-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.project-container div {
+  margin: auto;
+}
+
+img {
+  width: 600px !important;
+  height: 100%;
+}

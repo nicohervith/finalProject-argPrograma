@@ -1,0 +1,30 @@
+.header-container {
+  width: 95%;
+  margin: auto;
+}
+.navbar-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0666b4e5;
+}
+.img-container {
+  width: 65%;
+}
+
+.header-container img {
+  width: 160px;
+  height: auto;
+}
+
+app-social {
+  float: right;
+  margin-top: 5px;
+}
+.login-btn {
+  cursor: pointer;
+  margin-right: 25px;
+  width: 100px;
+}
