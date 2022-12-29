@@ -19,11 +19,12 @@ export class AutenticacionService {
     return this.http.post(this.url, credenciales).pipe(
       map((data) => {
         sessionStorage.setItem('currentUser', JSON.stringify(data));
+        this.currentUserSubject.next(data);
         return data;
       })
     );
   }
-  get UsuarioAutenticado(){
+  get UsuarioAutenticado() {
     return this.currentUserSubject.value;
   }
 }
