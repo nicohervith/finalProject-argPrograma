@@ -3,6 +3,13 @@
   display: flex;
   flex-direction: row;
 }
+.about-title{
+  margin: auto;
+}
+.about-title h3{
+  width: 75%;
+  margin: auto;
+}
 p {
   width: 75%;
   margin: auto;

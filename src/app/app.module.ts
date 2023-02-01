@@ -15,6 +15,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { PortfolioService } from './servicios/portfolio.service';
 import { InterceptorService } from './servicios/interceptor.service';
+import { ExperienceComponent } from './components/experience/experience.component';
 
 
 @NgModule({
@@ -28,6 +29,7 @@ import { InterceptorService } from './servicios/interceptor.service';
     EducationComponent,
     IniciarSesionComponent,
     PortfolioComponent,
+    ExperienceComponent,
   ],
   imports: [
     BrowserModule,
