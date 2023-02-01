@@ -58,6 +58,9 @@ img {
   position: absolute;
   cursor: pointer;
 }
+i{
+  cursor: pointer;
+}
 
 .profile-img img {
   width: 170px;

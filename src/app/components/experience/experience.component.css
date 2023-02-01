@@ -1,3 +1,16 @@
 .row{
-
+  width: 95%;
+  margin: auto;
+  background-color: rgb(111, 153, 207);
 }
+.title{
+  color:#f1f1f1;
+  margin:auto;
+  text-align: center;
+  margin-top:20px;
+}
+
+h4,p,h5,ul{
+  color:#f1f1f1;
+}
+
