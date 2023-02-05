@@ -1,0 +1,35 @@
+.row {
+  width: 95%;
+  background-color: #0666b4e5;
+  margin: auto;
+}
+h5 {
+  color: #f1f1f1;
+}
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: space-around;
+  align-items: center;
+  margin:10px 0 10px 0;
+}
+hr {
+  width: 90%;
+  margin: auto;
+  color: #f1f1f1;
+}
+.row p {
+  color: #f1f1f1;
+  font-size: 14px;
+  margin: auto;
+}
+
+.nombre-container{
+  margin-top:15px;
+  margin-bottom: 10px;
+}
+.nombre {
+  margin:20px 0 0 20px;
+  text-align: center;
+}

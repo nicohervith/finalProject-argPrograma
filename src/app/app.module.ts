@@ -16,6 +16,8 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { PortfolioService } from './servicios/portfolio.service';
 import { InterceptorService } from './servicios/interceptor.service';
 import { ExperienceComponent } from './components/experience/experience.component';
+import { SkillsComponent } from './components/skills/skills.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 @NgModule({
@@ -30,11 +32,14 @@ import { ExperienceComponent } from './components/experience/experience.componen
     IniciarSesionComponent,
     PortfolioComponent,
     ExperienceComponent,
+    SkillsComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
-    HttpClientModule,
     AppRoutingModule,
+    RouterModule,
+    HttpClientModule,
     ReactiveFormsModule,
 
   ],
