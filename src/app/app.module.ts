@@ -42,7 +42,6 @@ import { FooterComponent } from './components/footer/footer.component';
     RouterModule,
     HttpClientModule,
     ReactiveFormsModule,
-
   ],
   providers: [
     PortfolioService,
