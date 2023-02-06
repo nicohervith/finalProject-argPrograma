@@ -12,13 +12,14 @@ import { IniciarSesionComponent } from './components/iniciar-sesion/iniciar-sesi
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ReactiveFormsModule } from '@angular/forms';
+
+//HttpClientModule para la conexión del front con el back
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { PortfolioService } from './servicios/portfolio.service';
 import { InterceptorService } from './servicios/interceptor.service';
 import { ExperienceComponent } from './components/experience/experience.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { FooterComponent } from './components/footer/footer.component';
-
 
 @NgModule({
   declarations: [
