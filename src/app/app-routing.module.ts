@@ -1,15 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { IniciarSesionComponent } from './components/iniciar-sesion/iniciar-sesion.component';
+import { LoginComponent } from './components/login/login.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 //import { GuardGuard } from "./servicios/guard.guard";
 
 const appRoute: Routes = [
   {
-    path: 'portfolio',
+    path: '',
     component: PortfolioComponent /*canActivate:[GuardGuard]*/,
   },
-  { path: 'login', component: IniciarSesionComponent },
+  { path: 'login', component: LoginComponent },
   { path: '', redirectTo: 'login', pathMatch: 'full' },
 ];
 

@@ -5,7 +5,8 @@
       <img src="../../../assets/img/APLogo.png" />
     </div>
     <app-social></app-social>
-    <a href=""><button (click)="login()" class="btn btn-success login-btn">Login</button ></a>
+    <button (click)="login()" class="btn btn-success login-btn" *ngIf="!isLogged ">Ingreso</button>
+    <button (click)="onLogOut()" class="btn btn-success login-btn" *ngIf="isLogged ">Cerrar Sesión</button>
   </div>
   <app-banner></app-banner>
 </div>

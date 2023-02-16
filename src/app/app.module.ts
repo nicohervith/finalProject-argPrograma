@@ -8,10 +8,10 @@ import { BannerComponent } from './components/banner/banner.component';
 import { AboutComponent } from './components/about/about.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { EducationComponent } from './components/education/education.component';
-import { IniciarSesionComponent } from './components/iniciar-sesion/iniciar-sesion.component';
+
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { AppRoutingModule } from './app-routing.module';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 //HttpClientModule para la conexión del front con el back
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
@@ -20,6 +20,8 @@ import { InterceptorService } from './servicios/interceptor.service';
 import { ExperienceComponent } from './components/experience/experience.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { LoginComponent } from './components/login/login.component';
+import { interceptorProvider } from './service/interceptor-service';
 
 @NgModule({
   declarations: [
@@ -30,20 +32,21 @@ import { FooterComponent } from './components/footer/footer.component';
     AboutComponent,
     ProjectsComponent,
     EducationComponent,
-    IniciarSesionComponent,
     PortfolioComponent,
     ExperienceComponent,
     SkillsComponent,
     FooterComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule,
     HttpClientModule,
-    ReactiveFormsModule,
+    FormsModule,
   ],
   providers: [
+    interceptorProvider,
     PortfolioService,
     {
       provide: HTTP_INTERCEPTORS,
