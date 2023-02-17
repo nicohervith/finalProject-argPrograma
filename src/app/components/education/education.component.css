@@ -1,29 +1,15 @@
-.main-container {
+.row{
   width: 95%;
   margin: auto;
   background-color: rgb(111, 153, 207);
 }
-.main-container h3 {
-  color: #f1f1f1;
+.title{
+  color:#f1f1f1;
+  margin:auto;
   text-align: center;
-  padding-top: 20px;
-}
-.project-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-.project-container div {
-  margin: auto;
+  margin-top:20px;
 }
 
-img {
-  width: 600px !important;
-  height: 100%;
-  object-fit: cover;
-  margin-left: 5px;
-  border-radius: 5px;
-}
-
-h4,ul,h5{
-  color:#f1f1f1
+h4,p,h5,ul{
+  color:#f1f1f1;
 }

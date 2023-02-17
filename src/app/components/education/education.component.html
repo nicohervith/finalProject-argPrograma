@@ -1,74 +1,30 @@
-<div class="main-container">
-  <h3>Educación</h3>
-  <div class="project-container">
-    <div class="card mt-3 mb-3" style="max-width: 600px;">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img src="../../../assets/img/livebets.png" class="img-fluid rounded-start" alt="...">
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-              content.
-              This content is a little bit longer.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="card mb-3" style="max-width: 600px;">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img src="../../../assets/img/arqproject2.png" class="img-fluid rounded-start" alt="...">
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-              content.
-              This content is a little bit longer.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
+<div class="row">
+  <h3 class="title">Educación</h3>
+  <div class="col-lg-2">
+    <button type="button" class="btn btn-dark" routerLink="/nuevaeducacion" *ngIf="isLogged">
+      Agregar educación
+    </button>
   </div>
-
-  <div class="row">
-    <div class="col-lg-11">
-      <ul>
-        <li>
-          <h4> Trabajo 1</h4> <h5> (years)</h5>
-        </li>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit error totam omnis aliquid optio. Vel illo dolore
-          esse iure aliquam ipsam, quisquam, explicabo eligendi, nihil rem error modi architecto incidunt?
-        </p>
-      </ul>
-
-      <ul>
-        <li>
-          <h4> Trabajo 2</h4>
-          <h5> (years)</h5>
-        </li>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit error totam omnis aliquid optio. Vel illo dolore
-          esse iure aliquam ipsam, quisquam, explicabo eligendi, nihil rem error modi architecto incidunt?
-        </p>
-      </ul>
-
-      <ul>
-        <li>
-          <h4> Trabajo 3</h4>
-          <h5> (years)</h5>
-        </li>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit error totam omnis aliquid optio. Vel illo dolore
-          esse iure aliquam ipsam, quisquam, explicabo eligendi, nihil rem error modi architecto incidunt?
-        </p>
-      </ul>
-
-    </div>
+  <div class="col-lg-12">
+    <table class="table">
+      <tbody>
+        <tr *ngFor="let Educacion of educacion">
+          <td>
+            <h3>{{Educacion.nombreE}}</h3>
+          </td>
+          <td>
+            {{Educacion.descripcionE}}
+          </td>
+          <td *ngIf="isLogged">
+            <button class="btn btn-light" routerLink="/editeducacion/{{Educacion.id}}">
+              <i class="bi bi-pencil">
+              </i>EDITAR
+            </button>
+          </td>
+          <td *ngIf="isLogged"><button class="btn btn-danger" (click)="delete(Educacion.id)"><i
+                class="bi bi-trash3"></i>BORRAR</button></td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </div>
