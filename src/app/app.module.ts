@@ -11,7 +11,7 @@ import { EducationComponent } from './components/education/education.component';
 
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { AppRoutingModule } from './app-routing.module';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 
 //HttpClientModule para la conexión del front con el back
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
@@ -26,7 +26,13 @@ import { NewExperienciaComponent } from './components/experience/new-experiencia
 import { EditExperienciaComponent } from './components/experience/edit-experiencia.component';
 import { NewEducacionComponent } from './components/education/new-educacion.component';
 import { EditEducacionComponent } from './components/education/edit-educacion.component';
-
+// Import ng-circle-progress
+import { NgCircleProgressModule } from 'ng-circle-progress';
+import { HysComponent } from './components/hys/hys.component';
+import { EditSkillComponent } from './components/hys/edit-skill.component';
+import { NewSkillComponent } from './components/hys/new-skill.component';
+import { EditAboutComponent } from './components/about/edit-about.component';
+import { EditBannerComponent } from './components/banner/edit-banner.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +52,11 @@ import { EditEducacionComponent } from './components/education/edit-educacion.co
     EditExperienciaComponent,
     NewEducacionComponent,
     EditEducacionComponent,
+    HysComponent,
+    EditSkillComponent,
+    NewSkillComponent,
+    EditAboutComponent,
+    EditBannerComponent,
   ],
   imports: [
     BrowserModule,
@@ -53,6 +64,7 @@ import { EditEducacionComponent } from './components/education/edit-educacion.co
     RouterModule,
     HttpClientModule,
     FormsModule,
+    NgCircleProgressModule.forRoot({}),
   ],
   providers: [
     interceptorProvider,
