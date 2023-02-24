@@ -10,6 +10,7 @@ import { NuevoUsuario } from '../model/nuevo-usuario';
 })
 export class AuthService {
   //Endpoint que le di al backend
+  // authURL = 'https://springboot-argprograma-xjdu.onrender.com';
   authURL = 'http://localhost:8080/auth/';
   constructor(private httpClient: HttpClient) {}
 

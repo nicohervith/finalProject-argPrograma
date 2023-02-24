@@ -15,8 +15,7 @@ import { FormsModule } from '@angular/forms';
 
 //HttpClientModule para la conexión del front con el back
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
-import { PortfolioService } from './servicios/portfolio.service';
-import { InterceptorService } from './servicios/interceptor.service';
+/* import { PortfolioService } from './servicios/portfolio.service'; */
 import { ExperienceComponent } from './components/experience/experience.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -33,6 +32,9 @@ import { EditSkillComponent } from './components/hys/edit-skill.component';
 import { NewSkillComponent } from './components/hys/new-skill.component';
 import { EditAboutComponent } from './components/about/edit-about.component';
 import { EditBannerComponent } from './components/banner/edit-banner.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideStorage,getStorage } from '@angular/fire/storage';
 
 @NgModule({
   declarations: [
@@ -65,15 +67,17 @@ import { EditBannerComponent } from './components/banner/edit-banner.component';
     HttpClientModule,
     FormsModule,
     NgCircleProgressModule.forRoot({}),
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideStorage(() => getStorage()),
   ],
   providers: [
     interceptorProvider,
-    PortfolioService,
+   /*  PortfolioService,
     {
       provide: HTTP_INTERCEPTORS,
       useClass: InterceptorService,
       multi: true,
-    },
+    }, */
   ],
   bootstrap: [AppComponent],
 })
