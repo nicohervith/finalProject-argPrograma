@@ -1,8 +1,37 @@
-img{
+img {
   width: 30px;
   height: auto;
-
 }
-a img{
+a img {
   margin-right: 5px;
+}
+.social-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 5px;
+}
+.container-item {
+  cursor: pointer;
+  border: 1px solid;
+  border-radius: 50%;
+  width: 38px;
+  font-size: 20px;
+  margin: auto;
+  text-align: center;
+  color: #f1f1f1;
+  height: auto;
+}
+.container-item i {
+  margin: auto;
+  text-align: center;
+  color: #f1f1f1;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .container-item{
+    font-size: 15px;
+    width: 25px;
+  }
 }

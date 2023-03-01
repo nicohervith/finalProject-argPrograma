@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
+import { DragDropModule } from '@angular/cdk/drag-drop';
+
 import { SocialComponent } from './components/social/social.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { AboutComponent } from './components/about/about.component';
@@ -66,6 +68,7 @@ import { provideStorage,getStorage } from '@angular/fire/storage';
     RouterModule,
     HttpClientModule,
     FormsModule,
+    DragDropModule,
     NgCircleProgressModule.forRoot({}),
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideStorage(() => getStorage()),

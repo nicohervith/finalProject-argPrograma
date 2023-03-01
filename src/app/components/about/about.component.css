@@ -3,11 +3,12 @@
   display: flex;
   flex-direction: row;
 }
-.about-title{
+.about-title {
   margin: auto;
+  width: auto;
 }
-.about-title h3{
-  width: 75%;
+.about-title h5 {
+  width: 100%;
   margin: auto;
 }
 p {
@@ -22,11 +23,21 @@ p {
 .edit i {
   position: absolute;
 }
-.edit-cross{
-   float: right;
+.edit-cross {
+  float: right;
   margin-right: 30px;
   cursor: pointer;
 }
-.edit-cross i{
-   position: absolute;
+.edit-cross i {
+  position: absolute;
+}
+
+@media only screen and (max-width: 508px) {
+  .about-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-title{
+    height: auto;
+  }
 }

@@ -29,7 +29,40 @@ app-social {
   width: 100px;
 }
 
-a{
+a {
   text-decoration: none;
   color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  .img-container img {
+    width: 120px;
+  }
+  .login-btn {
+  cursor: pointer;
+  margin-right: 20px;
+  width: 70px;
+  font-size:13px;
+  }
+}
+
+@media only screen and (max-width: 508px) {
+    .img-container {
+      width: 100px;
+    }
+  .img-container img {
+    width: 100px;
+  }
+  .login-btn {
+  cursor: pointer;
+  margin-right: 20px;
+  width: 70px;
+  height: 35px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  font-size:13px;
+  }
+  app-social{
+    margin:auto;
+  }
 }

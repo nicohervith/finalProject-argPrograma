@@ -9,3 +9,9 @@
   flex-direction: column;
   align-items: center;
 }
+.title{
+    color: #f1f1f1;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+}
