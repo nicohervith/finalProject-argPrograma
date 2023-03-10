@@ -11,6 +11,6 @@ export const environment = {
   },
   production: true,
   //Acá debo poner la url que apunta al deploy
-  //URL: 'https://springboot-argprograma-xjdu.onrender.com',
-  URL: 'http://localhost:8080/'
+  URL: 'https://springboot-argprograma-xjdu.onrender.com/',
+  //URL: 'http://localhost:8080/'
 };

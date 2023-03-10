@@ -1,30 +1,39 @@
 <div class="row">
   <h3 class="title">Experiencia laboral</h3>
-  <div class="col-lg-2">
-    <button type="button" class="btn btn-dark" routerLink="/nuevaexp" *ngIf="isLogged">
-      Nueva Experiencia
-    </button>
-  </div>
+  <div class="border"></div>
+
   <div class="col-lg-12">
     <table class="table">
       <tbody>
         <tr *ngFor="let Experiencia of expe">
-          <td>
-            <h3>{{Experiencia.nombreE}}</h3>
-          </td>
-          <td>
-            {{Experiencia.descripcionE}}
-          </td>
-          <td *ngIf="isLogged">
-            <button class="btn btn-light" routerLink="/editexp/{{Experiencia.id}}">
-              <i class="bi bi-pencil">
-              </i>EDITAR
-            </button>
-          </td>
-          <td *ngIf="isLogged"><button class="btn btn-danger" (click)="delete(Experiencia.id)"><i
-                class="bi bi-trash3"></i>BORRAR</button></td>
+          <div class="container-experience">
+            <div class="nombre-descripcion">
+              <td>
+                <h4>{{Experiencia.nombreE}}</h4>
+              </td>
+              <td class="experiencia">
+                {{Experiencia.descripcionE}}
+              </td>
+              <div class="border-hr"></div>
+            </div>
+            <div class="botones">
+              <td *ngIf="isLogged">
+                <button class="btn btn-light edit" routerLink="/editexp/{{Experiencia.id}}">
+                  <i class="bi bi-pencil">
+                  </i>EDITAR
+                </button>
+              </td>
+              <td *ngIf="isLogged"><button class="btn btn-danger delete" (click)="delete(Experiencia.id)"><i
+                    class="bi bi-trash3"></i>BORRAR</button></td>
+            </div>
+          </div>
         </tr>
       </tbody>
     </table>
+  </div>
+  <div class="col-lg-2 add-experience">
+    <button type="button" class="btn btn-dark" routerLink="/nuevaexp" *ngIf="isLogged">
+      Agregar Experiencia
+    </button>
   </div>
 </div>

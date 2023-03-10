@@ -1,20 +1,19 @@
 <div class="main-container">
   <div class="banner">
     <div class="banner-container">
-      <div class="edit"><i class="fa-solid fa-pen-to-square"></i></div>
-      <img src="../../../assets/img/background2.jpg" alt="">
+      <!-- <div class="edit"><i class="fa-solid fa-pen-to-square"></i></div> -->
+      <img src="../../../assets/img/background2.jpg" alt="" />
       <div class="about-container-banner">
 
-        <div class="">
+        <div class="editar-imagen">
           <button type="button" class="btn btn-dark" routerLink="/edit/img/1" *ngIf="isLogged">
-            Editar imágenes
+            Editar imágen
           </button>
         </div>
 
         <div class="profile-img">
-          <div class="edit"><i class="fa-solid fa-pen-to-square"></i></div>
-          <img id="fotodeperfil" src={{persona.img}} alt="">
-
+          <!-- <div class="edit"><i class="fa-solid fa-pen-to-square"></i></div> -->
+          <img id="fotodeperfil" src="../../../assets/img/perfil.jpeg" alt="" />
         </div>
         <div class="about-text">
           <app-about></app-about>

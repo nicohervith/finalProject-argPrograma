@@ -9,9 +9,33 @@
   flex-direction: column;
   align-items: center;
 }
-.title{
-    color: #f1f1f1;
-    margin: auto;
-    text-align: center;
-    margin-top: 20px;
+.title {
+  color: #f1f1f1;
+  margin: auto;
+  text-align: center;
+  margin-top: 20px;
+}
+.border {
+  width: 110px;
+  height: 9px;
+  background-color: #1c41bb;
+  margin: 25px auto;
+  border: 0 !important;
+}
+.hys-container {
+  display: flex;
+  flex-direction: row;
+  /* width: 90%; */
+  justify-content: center;
+  height: auto;
+}
+.add-skill-button {
+  padding: 10px;
+}
+
+@media only screen and (max-width: 508px) {
+  .hys-container {
+    display: flex !important;
+    flex-direction: column !important;
+  }
 }

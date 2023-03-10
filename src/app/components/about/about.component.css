@@ -5,15 +5,27 @@
 }
 .about-title {
   margin: auto;
-  width: auto;
+  width: 60%;
 }
 .about-title h5 {
   width: 100%;
   margin: auto;
+  text-align: center;
+}
+.text-container {
+  width: 25%;
+  height: auto;
+  padding-left: 14px;
+}
+.text-container h5,
+.text-container h6 {
+  margin: auto;
+  text-align: center;
 }
 p {
   width: 75%;
   margin: auto;
+  text-align: center;
 }
 .edit {
   float: right;
@@ -31,13 +43,33 @@ p {
 .edit-cross i {
   position: absolute;
 }
+.button-padding {
+  padding: 10px;
+  left: 55px;
+  position: relative;
+}
 
 @media only screen and (max-width: 508px) {
   .about-container {
     display: flex;
     flex-direction: column;
+    top: 50px;
+    position: relative;
+    gap: 10px;
   }
-  .about-title{
+  .text-container {
+    width: 90% !important;
+  }
+  .about-title {
     height: auto;
+    width: 90%;
+  }
+  .button-padding {
+    padding: 10px;
+    left: 0;
+    top: 64px;
+    margin: auto;
+    right: 0;
+    position: relative;
   }
 }

@@ -1,15 +1,11 @@
-<div class="edit"><i class="fa-solid fa-pen-to-square"></i></div>
-<div class="edit-cross"><i class="fa-regular fa-circle-xmark"></i></div>
+<!-- <div class="edit"><i class="fa-solid fa-pen-to-square"></i></div>
+<div class="edit-cross"><i class="fa-regular fa-circle-xmark"></i></div> -->
 
-<div class="col-lg-2">
-  <button type="button" class="btn btn-dark" routerLink="/edit/about/1" *ngIf="isLogged">
-    Editar nombre
-  </button>
-</div>
+
 
 <div class="about-container">
   <div class="text-container">
-    <div class="edit"><i class="fa-solid fa-pen-to-square"></i></div>
+    <!--     <div class="edit"><i class="fa-solid fa-pen-to-square"></i></div> -->
     <h5>{{persona.nombre}} {{persona.apellido}}</h5>
     <h6>Full Stack Developer</h6>
   </div>
@@ -18,4 +14,11 @@
     <h5>Acerca de mí</h5>
     <p>{{persona.descripcion}}</p>
   </div>
+</div>
+
+
+<div class="button-padding col-lg-2">
+  <button type="button" class="btn btn-dark" routerLink="/edit/about/1" *ngIf="isLogged">
+    Editar información
+  </button>
 </div>

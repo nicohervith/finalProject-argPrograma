@@ -11,9 +11,20 @@
 .project-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  width: 90%;
+  margin: auto;
+  gap: 10px;
+  padding-bottom: 15px;
 }
 .project-container div {
   margin: auto;
+}
+.border {
+  width: 110px;
+  height: 9px;
+  background-color: #1c41bb;
+  margin: 25px auto;
+  border: 0 !important;
 }
 
 img {
@@ -24,9 +35,10 @@ img {
 }
 .box {
   max-width: 580px;
-  background-color: rgba(241, 241, 241,0.8);
-  padding:5px;
+  background-color: rgba(241, 241, 241, 0.8);
+  padding: 5px;
   cursor: move;
+  height: 160px;
 }
 @media only screen and (max-width: 1024px) {
   .project-container {
@@ -45,6 +57,15 @@ img {
     margin: auto;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
+  }
+  .box {
+    height: 100%;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
   }
 }
 
