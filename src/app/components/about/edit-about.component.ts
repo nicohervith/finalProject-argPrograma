@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { persona } from 'src/app/model/persona.model';
 import { PersonaService } from 'src/app/service/persona.service';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-edit-about',
@@ -34,6 +35,13 @@ export class EditAboutComponent implements OnInit {
     const id = this.activatedRouter.snapshot.params['id'];
     this.personaS.update(id, this.persona).subscribe(
       (data) => {
+        Swal.fire({
+          position: 'center',
+          icon: 'success',
+          title: 'Información actualizada',
+          showConfirmButton: false,
+          timer: 1500,
+        });
         this.router.navigate(['']);
       },
       (err) => {
